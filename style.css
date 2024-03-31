@@ -1,0 +1,234 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+    margin: 0;padding: 0; box-sizing: border-box;
+    font-family: sans-serif;
+    
+}
+body{
+    background-color: black;
+}
+.container{
+    height: 105vh;
+    background-image: url(/assets/images/background.jpg);
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+.container .box{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+}
+nav{
+    padding-top: 18px;
+    display: flex;
+    /* background-color: #D81F26; */
+    max-width: 75vw;
+    margin:auto;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .logo{
+    width: 119px;
+    z-index: 10;
+}
+.navi{
+    z-index: 10;
+    display: flex;
+    align-items:flex-start;
+}
+.navi> :first-child{
+    padding: 4px 25px 4px 2px;
+    display: flex;
+    gap: 8px;
+    background-color: rgba(0, 0, 0, 0.35);
+    border:1px solid rgba(255, 255, 255, 0.399);
+    border-radius: 3px;
+    color: #f2f2f8;
+    margin-right: 20px;
+}
+
+.navi .btn{
+    padding: 7px 13px;
+    border-radius: 4px;
+    font-size: x-small;
+    height: 25px;
+}
+.member{
+    position: absolute;
+    font-family: sans-serif;
+    height:calc(100% - 56px);
+    width: 100%;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #f2f2f8;
+    gap: 15px;
+}
+.member> :first-child{
+    font-size: 44px;
+    font-weight: bold;
+}
+.member> :nth-child(2){
+    font-size: 23px;
+    font-weight:400;
+}
+.member> :nth-child(3){
+    font-size: 20px;
+}
+a{
+    text-decoration: none;
+    color: #f2f2f8;
+}
+.btn{
+    background-color: #D81F26;
+    border-style: none;
+    cursor: pointer;
+}
+/* .info{
+    padding: 50px;
+} */
+.info> :first-child input{
+    padding: 13px 130px 13px 11px;
+    background-color: rgba(35, 35, 35, 0.6);
+    margin: 6px;
+    color: #f2f2f8;
+    border: 1px solid rgba(255, 255, 255, 0.261);
+    border-radius: 4px;
+}
+.info> :nth-child(2) button{
+    font-size: large;
+    padding: 12px 23px 12px 23px;
+    border-radius: 4px;
+}
+.line{
+    padding: 2px;
+    background-color: rgb(50, 50, 50);
+}
+.first{
+    height: 75vh;
+    max-width: 75vw;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f2f2f8;
+}
+.vdo{
+    position: relative;
+}
+.vdo img{
+    height: 300px;
+    position: relative;
+    z-index: 10;
+}
+.vdo video{
+    position: absolute;
+    top: 62px;
+    right: 27px;
+}
+.first> div{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+.first> div :first-child{
+    font-size: 43px;
+    font-weight: bolder;
+}
+.first> div :nth-child(2){
+    font-size: 21px;
+}
+.third{
+    position: relative;
+}
+.third .vdo video{
+    position: absolute;
+    top: 26px;
+    right: 74px;
+}
+.faq{
+    text-align: center;
+    font-size: 35px;
+    font-weight: bolder;
+    color: #f2f2f8;
+    margin: 50px 0px 30px;
+}
+.block{
+    max-width: 75vw;
+    margin: auto;
+    font-size: 21px;
+}
+
+.slice{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 8px;
+    color: #f2f2f8;
+    background-color:#2d2d2d;
+    transition: all 500ms ease-out;
+}
+.slice:hover {
+    background-color: #414141;;
+}
+.ready{
+    text-align: center;
+    color: #f2f2f8;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: 16px;
+}
+.secinfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
+.secinfo> :first-child input{
+    padding: 13px 130px 13px 11px;
+    background-color: rgba(35, 35, 35, 0.6);
+    margin: 6px;
+    color: #f2f2f8;
+    border: 1px solid rgba(255, 255, 255, 0.261);
+    border-radius: 4px;
+}
+.secinfo> :nth-child(2) button{
+    font-size: large;
+    padding: 12px 23px 12px 23px;
+    border-radius: 4px;
+}
+footer{
+    color:#a2b3b3;
+    max-width: 75vw;
+    margin: auto;
+    
+}
+footer> :first-child{
+    padding:50px 0 18px 0;
+    font-size: 13px;
+}
+footer .grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    row-gap: 18px;
+    font-size: 11px;
+}
+footer a{
+    color: #a2b3b3;
+    text-decoration:underline;
+}
+footer .language{
+    padding: 18px 0 18px 0;
+}
+.terminate{
+    font-size: 10px;
+    padding-bottom: 55px;
+}
